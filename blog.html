@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="86-PHero-tube/fi_3039386.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="container mx-auto mt-10 text-xl text-black flex-wrap">
+      <div>
+        <p class="text-red-600 text-3xl mb-4">
+          Discuss the scope of var, let, and const .
+        </p>
+        <p>
+          JavaScript, var, let, and const are used to declare variables, but
+          they have different scopes and behaviors. Understanding their scope is
+          crucial for writing efficient and bug-free code. Here's a discussion
+          of the scope of each: <br /><br />
+          <span class="text-2xl text-black font-medium"> var:</span>
+          <span class="underline"> Function Scope:</span> Variables declared
+          with var are function-scoped, which means they are accessible
+          throughout the entire function in which they are declared. <br />
+          <span class="underline"> Hoisting:</span>
+          var variables are hoisted to the top of their containing function or
+          global scope. This means that the variable declarations are processed
+          before the code is executed, but the assignments remain where they are
+          in the code. <br />
+          <span class="underline"> Re-declaration:</span>
+          Variables declared with var can be re-declared within the same scope
+          without any error.
+        </p>
+        <br />
+        <p>
+          <span class="text-2xl text-black font-medium"> let:</span>
+          <span class="underline"> Block Scope:</span>
+          Variables declared with let are block-scoped, which means they are
+          accessible only within the block (enclosed by curly braces) in which
+          they are defined. Hoisting: let variables are hoisted, but unlike var,
+          they are not initialized. This means you cannot access the variable
+          before its declaration in the code. <br />
+          <span class="underline"> No Re-declaration:</span>
+          You cannot re-declare a variable with the same name in the same scope
+          using let. Attempting to do so will result in a syntax error.
+        </p>
+        <br />
+        <p>
+          <span class="text-2xl text-black font-medium"> const:</span>
+          <span class="underline"> Block Scope:</span>
+          Like let, variables declared with const are block-scoped. <br />
+          <span class="underline"> Hoisting:</span>
+          const variables are hoisted, but like let, they are not initialized.
+          Immutable Value: Variables declared with const cannot be reassigned
+          after they are initialized. However, the value they reference (in case
+          of objects and arrays) can still be modified.
+        </p>
+      </div>
+      <div class="">
+        <p class="text-red-600 text-3xl my-6">
+          Tell us the use cases of null and undefined .
+        </p>
+        <p>
+          In JavaScript, null and undefined are both used to represent the
+          absence of a value, but they are used in slightly different contexts
+          and have different use cases: <br /><br />
+          <span class="text-2xl text-black font-medium">undefined:</span>
+          <span class="underline"> Default Value:</span>
+          When a variable is declared but not assigned a value, it is
+          automatically initialized to undefined. <br />
+          <span class="underline"> Function Return:</span>
+
+          When a function does not explicitly return a value, it returns
+          undefined. <br />
+          <span class="underline"> Missing Object Properties:</span>
+
+          When you try to access an object property that does not exist, the
+          result is undefined.
+        </p>
+        <p class="my-4">
+          <span class="text-2xl text-black font-medium">null:</span>
+          <span class="underline"> Intentional Absence:</span>
+
+          null is often used when you want to explicitly indicate that a
+          variable should have no value or that an object property intentionally
+          has no value. <br />
+          <span class="underline">Clearing Values:</span>
+
+          You can assign null to a variable or object property to indicate that
+          it should no longer hold a value.
+        </p>
+      </div>
+      <div>
+        <p class="text-red-600 text-3xl my-6">What do you mean by REST API?</p>
+        <p>
+          REST API stands for Representational State Transfer Application
+          Programming Interface. It is a set of architectural principles and
+          constraints for designing and interacting with web services. REST is
+          not a specific technology or protocol; rather, it is an architectural
+          style that uses the HTTP protocol for communication.<br /><br /> Key principles
+          and characteristics of RESTful APIs include:<br /><br /> Statelessness: Each
+          request from a client to a server must contain all the information
+          needed to understand and process the request. The server should not
+          rely on any information from previous requests. This makes REST APIs
+          scalable and easy to cache.<br /><br /> Client-Server Architecture: REST separates
+          the client and server responsibilities, allowing them to evolve
+          independently. Clients and servers can be developed and maintained
+          separately, as long as they adhere to the same API contract.<br /><br />
+          Resource-Based: Resources are the fundamental concept in REST.
+          Everything is treated as a resource, and each resource is identified
+          by a unique URL (Uniform Resource Locator). Resources can represent
+          objects, data, or services. HTTP Methods: REST uses standard HTTP
+          methods (GET, POST, PUT, DELETE, etc.) to perform operations on
+          resources. These methods have well-defined meanings, making the API
+          predictable and easy to understand.
+          <br /><br />
+          GET: Retrieve data from the server.
+          <br />
+          POST: Create a new resource on the server.
+          <br />
+          PUT: Update an existing resource on the server.
+          <br />
+          DELETE: Remove a resource from the server. And others like PATCH,
+          HEAD, OPTIONS, etc.
+          <br /><br />
+          Uniform Interface: REST APIs have a uniform and consistent interface,
+          which simplifies client-server interactions. This includes the use of
+          standard HTTP status codes (e.g., 200 for success, 404 for not found)
+          and the consistent use of URLs.
+          <br /><br />
+          Representation: Resources can have multiple representations, such as
+          JSON, XML, HTML, or others. Clients can specify the desired
+          representation using HTTP headers (e.g., Accept header).
+          <br /><br />
+          Stateless Communication: RESTful interactions between clients and
+          servers are stateless, meaning that each request from a client to a
+          server must contain all the information needed to understand and
+          process the request. Any required session state should be stored on
+          the client side. RESTful APIs are widely used for building web
+          services due to their simplicity, scalability, and ease of
+          integration. They are commonly used for data retrieval, CRUD (Create,
+          Read, Update, Delete) operations, and more. Popular web services like
+          Twitter, Facebook, and many others provide RESTful APIs for developers
+          to access their data and services.
+        </p>
+      </div>
+      <footer class="flex items-center justify-center lg:justify-end mb-20"> <button class=" bg-rose-500 rounded-lg text-xl mt-4 px-2 py-2 "><a href="index.html">Return to HOME Page.</a></button></footer>
+    </div>
+  </body>
+</html>

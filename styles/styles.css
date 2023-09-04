@@ -1,0 +1,15 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.button-inactive {
+  color: #252525;
+  background-color: #25252634;
+}
+
+.button-active {
+  color: #fff;
+  background-color: #ff0000;
+}
